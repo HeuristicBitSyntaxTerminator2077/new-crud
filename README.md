@@ -31,6 +31,9 @@ CCS MediaSync helps IT departments and multimedia labs track equipment, monitor 
 ### Visual Indicators
 <img width="791" alt="Stock Level Visual Indicators" src="https://github.com/user-attachments/assets/a29da993-c33c-471d-b1b2-7b35f7ba748a" />
 
+### Duplicate Detection
+<img width="1764" alt="Duplicate Detection Modal" src="https://github.com/user-attachments/assets/435b0f2e-cc75-4fef-81e6-4e2c8fa9eeea" />
+
 ---
 
 ## ✨ Features
