@@ -2,7 +2,46 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 
 ## Getting Started
 
-First, run the development server:
+### 1. Install Dependencies
+
+```bash
+npm install
+```
+
+### 2. Set Up Database
+
+This project uses Prisma with MySQL/MariaDB. You need to:
+
+1. **Create a `.env` file** in the root directory with your database connection:
+
+```env
+# Option 1: Use a connection string
+DATABASE_URL="mysql://user:password@localhost:3306/database_name"
+
+# Option 2: Use individual variables (if DATABASE_URL is not set)
+DATABASE_HOST=localhost
+DATABASE_PORT=3306
+DATABASE_USER=root
+DATABASE_PASSWORD=your_password
+DATABASE_NAME=your_database_name
+```
+
+2. **Make sure your MySQL/MariaDB server is running**
+
+3. **Create the database** (if it doesn't exist):
+```bash
+mysql -u root -p
+CREATE DATABASE your_database_name;
+```
+
+4. **Run Prisma migrations** to set up the database schema:
+```bash
+npx prisma migrate dev
+```
+
+This will create the `InventoryItem` table in your database.
+
+### 3. Run the Development Server
 
 ```bash
 npm run dev

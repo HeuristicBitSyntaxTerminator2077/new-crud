@@ -1,0 +1,18 @@
+generator client {
+  provider = "prisma-client-js"
+  output   = "../node_modules/.prisma/client"
+}
+
+datasource db {
+  provider = "mysql"
+}
+
+model InventoryItem {
+  id        Int      @id @default(autoincrement())
+  name      String
+  category  String
+  quantity  Int
+  minStock  Int      @default(10) // <--- CRITICAL: Make sure this exists
+  status    String   @default("Healthy")
+  createdAt DateTime @default(now())
+}
