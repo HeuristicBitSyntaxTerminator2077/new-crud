@@ -60,8 +60,9 @@ function getConnectionConfig() {
             }
             ssl.ca = readFileSync(certPath, 'utf8')
           } catch (error: any) {
-            console.error(`Failed to read SSL certificate from ${sslCa}:`, error)
-            throw new Error(`SSL certificate file not found: ${sslCa}. Error: ${error.message}`)
+            // In production (Vercel), the certificate file won't exist
+            // TiDB Cloud connections work without custom CA when using sslaccept=strict
+            console.warn(`SSL certificate not found at ${sslCa}, using default SSL settings`)
           }
         }
         
