@@ -20,6 +20,19 @@ CCS MediaSync helps IT departments and multimedia labs track equipment, monitor 
 
 ---
 
+## 📸 Screenshots
+
+### Light Mode
+<img width="1588" alt="CCS MediaSync Light Mode" src="https://github.com/user-attachments/assets/51fcf7e9-296b-4641-9175-cd8ed735d30c" />
+
+### Dark Mode
+<img width="1588" alt="CCS MediaSync Dark Mode" src="https://github.com/user-attachments/assets/92aeb865-cee1-4c2f-8c7a-251514101228" />
+
+### Visual Indicators
+<img width="791" alt="Stock Level Visual Indicators" src="https://github.com/user-attachments/assets/a29da993-c33c-471d-b1b2-7b35f7ba748a" />
+
+---
+
 ## ✨ Features
 
 ### 🎯 Smart Stock Monitoring
