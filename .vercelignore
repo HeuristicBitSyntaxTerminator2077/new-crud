@@ -1,0 +1,13 @@
+# Ignore local environment files - use Vercel Environment Variables instead
+.env
+.env.*
+.env.local
+.env.development
+.env.production
+
+# Ignore SSL certificates (use Vercel's environment)
+certs/
+
+# Node modules (Vercel installs fresh)
+node_modules/
+
